@@ -22,7 +22,7 @@ async function sendMail() {
         });
 
         const message = {
-            from: process.env.NODE_MAILER_FROM_EMAIL, // Replace with your verified SES email
+            from: process.env.NODE_MAILER_FROM_EMAIL, // Replace with your verified SES email (sender email)
             to: [''],  // List of email addresses
             subject: 'Sending Emails with AWS SES and Nodemailer in Node.js',
             text: 'For clients with plaintext support only',
